@@ -6,10 +6,12 @@
       "persistent": true
     },
     "lint": {
-
+      "cache": false,
+      "persistent": false
     },
     "check": {
-
+      "cache": false,
+      "persistent": false
     },
     "build": {
       "dependsOn": ["^build"],
