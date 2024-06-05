@@ -1,7 +1,7 @@
 {
   "name": "filetransfer-project",
-  "packageManager": "pnpm@9.1.4",
   "type": "module",
+  "packageManager": "pnpm@9.1.4",
   "scripts": {
     "dev": "turbo dev",
     "lint": "turbo lint",
@@ -9,12 +9,14 @@
     "build": "turbo build"
   },
   "devDependencies": {
+    "@filetransfer/eslint-config": "workspace:*",
+    "eslint": "8.57.0",
     "turbo": "^2.0.1"
   },
   "pnpm": {
     "overrides": {
-      "rimraf": "^4",
-      "glob": "^9"
+      "glob": "^9",
+      "rimraf": "^4"
     }
   }
 }
