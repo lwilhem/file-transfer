@@ -1,3 +1,12 @@
-import eslint_filetransfer from "@filetransfer/eslint-config"
+import antfu from "@antfu/eslint-config"
 
-export default eslint_filetransfer()
+export default antfu({
+  svelte: true,
+  stylistic: {
+    quotes: "double",
+    semi: false,
+  },
+  rules: {
+    "no-console": "off",
+  },
+})
