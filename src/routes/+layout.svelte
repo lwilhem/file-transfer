@@ -1,7 +1,12 @@
 <script lang="ts">
-  import "@unocss/reset/tailwind-compat.css"
+  import "@unocss/reset/tailwind.css"
   import "uno.css"
 </script>
 
-<main>test</main>
-<slot />
+<svelte:head>
+  <title>FIleshare - WebRTC or long term</title>
+</svelte:head>
+
+<main class="h-screen flex flex-col items-center justify-center">
+  <slot />
+</main>
