@@ -1,7 +1,14 @@
 <script lang="ts">
+  import { onMount } from "svelte"
+  import { browser } from "$app/environment"
   import "@unocss/reset/tailwind-compat.css"
   import "uno.css"
+
+  onMount(() => {
+    if (browser) {
+      console.log("in client")
+    }
+  })
 </script>
 
-<h1 class="text-red-500">Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<span>test</span>
