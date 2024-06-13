@@ -1,10 +1,10 @@
 import { createBrowserClient, isBrowser, parse } from "@supabase/ssr"
-import { PUBLIC_SUPABASE_URL } from "$env/static/public"
+import { PUBLIC_SUPABASE_ANON_KEY, PUBLIC_SUPABASE_URL } from "$env/static/public"
 
 export const load = async ({ fetch, data, depends }) => {
   depends("supabase:auth")
 
-  const supabase = createBrowserClient(PUBLIC_SUPABASE_URL, PUBLIC_SUPABASE_URL, {
+  const supabase = createBrowserClient(PUBLIC_SUPABASE_URL, PUBLIC_SUPABASE_ANON_KEY, {
     global: {
       fetch,
     },
