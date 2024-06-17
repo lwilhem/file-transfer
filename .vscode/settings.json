@@ -54,6 +54,6 @@
 
   "svelte.enable-ts-plugin": true,
   "files.associations": {
-  "*.css": "tailwindcss"
+    "*.css": "tailwindcss"
   }
 }
