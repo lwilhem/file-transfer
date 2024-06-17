@@ -1,14 +1,9 @@
-<script lang="ts">
-  import { onMount } from "svelte"
-  import { browser } from "$app/environment"
-  import "@unocss/reset/tailwind-compat.css"
-  import "uno.css"
-
-  onMount(() => {
-    if (browser) {
-      console.log("in client")
+<h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+  
+  <style lang="postcss">
+    :global(html) {
+      background-color: theme(colors.gray.100);
     }
-  })
-</script>
-
-<span>test</span>
+  </style>
