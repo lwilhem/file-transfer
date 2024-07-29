@@ -8,4 +8,8 @@ export default antfu({
   rules: {
     "no-console": "off",
   },
-}).append([...tailwindcss.configs["flat/recommended"]])
+})
+  .append([...tailwindcss.configs["flat/recommended"]])
+  .overrideRules({
+    "tailwindcss/no-custom-classname": "off",
+  })
