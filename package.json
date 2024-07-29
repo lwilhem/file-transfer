@@ -1,12 +1,13 @@
 {
   "name": "warframe-builder",
-  "private": true,
   "type": "module",
   "version": "1.0.0",
+  "private": true,
   "license": "MIT",
   "scripts": {
     "postinstall": "nuxt prepare",
     "dev": "nuxt dev -p 3000",
+    "lint": "eslint . --fix",
     "build": "nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview"
@@ -14,5 +15,12 @@
   "dependencies": {
     "nuxt": "3.12.4",
     "vue": "latest"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.24.0",
+    "eslint": "^9.8.0"
+  },
+  "overrides": {
+    "eslint": "^9.8.0"
   }
 }
