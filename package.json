@@ -13,14 +13,14 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
-    "@nuxt/icon": "^1.4.0",
+    "@nuxt/icon": "^1.4.4",
     "nuxt": "3.12.4",
     "radix-vue": "^1.9.2",
     "vue": "latest",
     "warframe-items": "^1.1262.109"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.24.0",
+    "@antfu/eslint-config": "^2.24.1",
     "@iconify-json/mdi": "^1.1.67",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "eslint": "^9.8.0",
