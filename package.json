@@ -13,10 +13,10 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
-    "@nuxt/icon": "^1.4.4",
-    "@prisma/client": "5.17.0",
+    "@nuxt/icon": "^1.4.5",
+    "@prisma/client": "5.18.0",
     "nuxt": "3.12.4",
-    "radix-vue": "^1.9.2",
+    "radix-vue": "^1.9.3",
     "vue": "latest",
     "warframe-items": "^1.1262.109"
   },
@@ -26,7 +26,7 @@
     "@nuxtjs/tailwindcss": "^6.12.1",
     "eslint": "^9.8.0",
     "eslint-plugin-tailwindcss": "^3.17.4",
-    "prisma": "^5.17.0"
+    "prisma": "5.18.0"
   },
   "overrides": {
     "eslint": "^9.8.0"
