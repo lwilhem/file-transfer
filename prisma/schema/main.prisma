@@ -6,11 +6,10 @@
 
 generator client {
   provider        = "prisma-client-js"
-  previewFeatures = ["prismaSchemaFolder", "fullTextIndex", "fullTextSearch"]
+  previewFeatures = ["prismaSchemaFolder", "fullTextIndex", "fullTextSearch", "omitApi"]
 }
 
 datasource db {
-  provider     = "postgresql"
-  url          = env("DATABASE_URL")
-  relationMode = "foreignKeys"
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
 }

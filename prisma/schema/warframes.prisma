@@ -1,0 +1,42 @@
+enum AuraPolarity {
+  DASH
+  D
+  V
+  BAR
+  NONE
+}
+
+model Warframes {
+  id         String   @id @default(cuid())
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  name        String  @unique
+  description String? @db.Text
+  passive     String  @db.Text
+  img_url     String?
+
+  default_health Int
+  max_health     Int
+  default_shield Int
+  max_shield     Int
+  armor          Int
+  default_energy Int
+  max_energy     Int
+  sprint_speed   Float
+
+  aura_polarity AuraPolarity
+  // 9 slot array, each slot can have a polarity
+  // 0 = Exilus, 1-8 = mod slots
+  mods_polarity AuraPolarity[]
+}
+
+model Abilities {
+  id         String   @id @default(cuid())
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  name        String  @unique
+  description String  @db.Text
+  icon_url    String?
+}
