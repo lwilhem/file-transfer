@@ -13,3 +13,6 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+// User and build models
+// Todo; handle changelogs once the core schema is stable

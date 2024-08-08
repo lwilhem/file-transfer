@@ -29,6 +29,8 @@ model Warframes {
   // 9 slot array, each slot can have a polarity
   // 0 = Exilus, 1-8 = mod slots
   mods_polarity AuraPolarity[]
+
+  abilities Abilities[]
 }
 
 model Abilities {
@@ -39,4 +41,17 @@ model Abilities {
   name        String  @unique
   description String  @db.Text
   icon_url    String?
+  is_helminth Boolean @default(false)
+
+  ability_slot Int // 1-4
+  warframe     Warframes @relation(fields: [warframe_id], references: [id])
+  warframe_id  String
+
+  // Stats and effects scaling
+  energy_cost Int
+
+  cast_time        Int
+  range            Int
+  duration         Int
+  ability_strength Int
 }
